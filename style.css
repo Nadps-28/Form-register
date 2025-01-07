@@ -1,0 +1,356 @@
+:root {
+  --primary: #4682B4;
+  --bg: #0c090a;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+/* SPA Js */
+
+.page {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  border-bottom: 4px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: rgba(1, 0, 0, 0.8);
+}
+
+.navbar .navbar-logo {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+  font-style: italic;
+}
+
+.navbar .navbar-nav {
+  padding-right: 4.5rem;
+}
+
+.navbar .navbar-nav a {
+  margin: 1.4rem;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 3.5px solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleY(0.5);
+}
+
+.navbar .navbar-icons {
+  display: none;
+}
+
+/* Hero Section */
+
+.hero {
+  display: inline-block;
+  padding: 35rem 7%;
+  background-color: 
+}
+
+.hero .hero-title {
+  color: var(--bg);
+  font-size: 3.2rem;
+  margin-top: -18rem;
+}
+
+.hero .hero-title span {
+  color: var(--primary);
+}
+
+.hero .hero-icon {
+  color: var(--bg);
+  width: 50px;
+  height: 50px;
+}
+
+.hero p {
+  margin-top: 3.5rem;
+  color: var(--bg);
+  font-weight: 100%;
+  font-size: 1.7rem;
+}
+
+.hero p:hover {
+  color: var(--primary);
+}
+
+.hero .line {
+  border: 2px solid #9B9BA6;
+}
+
+.hero .btn {
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.hero .btn:hover {
+  background-color: var(--bg);
+}
+
+/* Form Register */
+
+.form-registrasi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22.5rem;
+  
+}
+
+.form-registrasi .form-registrasi-content {
+  padding-top: 5rem;
+  text-align: center;
+  border-radius: 2.5%;
+  background-color: #fff;
+  border: 2px;
+  box-shadow: 0 5px 15px 10px rgba(58, 44, 44, 0.7);
+  width: 45rem;
+  height: 55rem;
+}
+
+.form-registrasi .form-registrasi-content .form-registrasi-title {
+  margin-top: -1.5rem;
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.form-container {
+  display: inline-block;
+  margin-top: 0;
+  align-items: center;
+  border: 3px solid var(--primary);
+  border-radius: 2%;
+  padding: 2.6rem;
+}
+
+.form-container input {
+  position: relative;
+  margin: 2rem;
+  font-size: 1.6rem;
+  padding: 0.7rem;
+  border: 2px solid var(--primary);
+  background-color: #fff;
+  border-color: var(--primary);
+  width: 23rem;
+  height: 2.5rem;
+}
+
+.form-container input[type="text"], input::placeholder, textarea::placeholder, input[type="number"], textarea[type="text"] {
+  color: var(--bg);
+  font-family: 'Poppins';
+}
+
+.form-container textarea {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  margin-top: 1.7rem;
+  width: 22rem;
+  height: 5rem;
+  border: 2px solid var(--primary);
+  border-color: var(--primary);
+  margin-right: 2rem;
+  margin-left: 3.5rem;
+}
+
+.form-container .icons {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  padding: 1rem;
+  color: var(--primary);
+}
+
+.form-container button {
+  padding: 0.8rem 3rem;
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+  color: #fff;
+  background-color: var(--primary);
+  margin-top: 3rem;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.form-container button:hover {
+  background-color: var(--bg);
+}
+
+/* About Section */
+
+.about {
+  padding: 8.5rem 7%;
+}
+
+.about .about-me {
+  color: var(--bg);
+  text-align: center;
+}
+
+.about .about-title {
+  font-size: 2rem;
+}
+
+.about .about-me img {
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.about .about-me p {
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  text-align: justify;
+  margin: 2rem;
+}
+
+.about .about-me-2 {
+  color: var(--bg);
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.about .about-me-2 p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: justify;
+  margin: 2rem;
+}
+
+.about .about-title-2 {
+  font-size: 2rem;
+}
+
+.about .lines {
+  border: 2px solid #9B9BA6;
+  margin-top: 5rem;
+}
+
+.about .lines-2 {
+  border: 2px solid #9B9BA6;
+  margin-top: 7rem;
+} 
+
+.about .about-me-3 {
+  color: var(--bg);
+}
+
+.about .about-me-3 .about-title-3 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.about .about-me-3 .icons {
+  width: 35px;
+  height: 35px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.about .about-me-3 .p {
+  position: relative;
+  display: flex;
+  font-size: 1.7rem;
+  margin-top: -2.7rem;
+}
+
+.about .about-me-3 p {
+  margin-left: 6rem;
+}
+
+.about .about-me-3 a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--bg);
+}
+
+.about .about-me-3 a:hover {
+  color: var(--primary);
+}
+
+
+/* Footer */
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: var(--primary);
+  margin-top: 11.9rem;
+}
+
+footer .socials {
+  margin-top: 1rem;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1.5rem;
+}
+
+footer .socials a:hover {
+  color: var(--bg);
+}
+
+footer .socials .socials-icons {
+  width: 40px;
+  height: 40px;
+}
+
+footer .info {
+  font-size: 1.7rem;
+  margin-top: 2.5rem;
+}
+
+footer .copyright {
+  font-size: 1.7rem;
+  margin-top: 2.5rem;
+}
