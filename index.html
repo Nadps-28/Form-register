@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Font Style -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Feather Icons -->
+  
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+  <!-- Style Css --> 
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Form Registrasi Nadps</title>
+  
+</head>
+
+<body>
+
+<!-- Navbar Start -->
+
+<section class="navbar" id="navbar">
+    <a href="#" class="navbar-logo">M<span>Nadps</span>.</a>
+    <div class="navbar-nav">
+      <a href="#" onclick="showPage('home')">Home</a>|
+      <a href="#" onclick="showPage('register')">Register</a>|
+      <a href="#" onclick="showPage('about')">About</a>
+    </div>
+    <div class="navbar-icons">
+      <a href="#" id="humberger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Navbar Finish -->
+
+  <div class="page active" id="home">
+    
+    <!-- Hero Section Start -->
+    
+    <section class="hero" id="hero">
+      <h2 class="hero-title"><span>Selamat datang</span> di web sederhana dari pemula seperti saya.<i data-feather="smile" class="hero-icon"></i></h2>
+      <div class="line"></div>
+      <p>
+        Pada web ini kalian bisa mengisi data di halaman register, untuk ke halaman register klik tombol pada navbar atau di bawah ini....
+      </p>
+      <button href="#" onclick="showPage('register')" class="btn">Register</button>
+    </section>
+   
+    <!-- Hero Section Finish -->
+    
+  </div>
+
+  <div class="page" id="register">
+
+<!-- Form Start -->
+
+  <div class="form-registrasi">
+    <div class="form-registrasi-content">
+      <h2 class="form-registrasi-title"><span>Form</span> Registrasi</h2>
+    
+      <form class="form-container" id="contactForm">
+        <i data-feather="user" class="icons"></i>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda..."><br>
+        <i data-feather="mail" class="icons"></i>
+        <input type="text" id="email" name="email" placeholder="Masukkan email anda..."><br>
+        <i data-feather="phone"class="icons"></i>
+        <input type="number" id="no.tlp" name="no.tlp" placeholder="Masukkan no.tlp anda..."><br>
+        <i data-feather="message-square" class="icons"></i>
+        <textarea type="text" id="pesan" name="pesan" placeholder="Masukkan pesan anda..."></textarea><br>
+        <button type="submit" class="button">Kirim</button>
+      </form>
+    </div>
+  </div>
+
+<!-- Form Finish -->
+
+  </div>
+  
+  <div class="page" id="about">
+    
+    <!-- About Section Start -->
+    
+    <section class="about" id="about">
+      <div class="about-me">
+        <h3 class="about-title"><span>Tentang</span> Saya</h3>
+        <img src="IMG-20240907-WA0134.jpg" alt="M.Navid" width="450px" height="auto">
+        <p>
+          Selamat datang di halaman about... Perkenalkan nama saya Muhammad Navid Alifian, saya saat ini menempuh pendidikan di sekolah SMK Bakti Nusantara 666 kelas XI jurusan PPLG.
+        </p>
+      </div>
+      
+      <div class="lines"></div>
+      
+      <div class="about-me-2">
+        <h2 class="about-title-2">Tujuan</h2>
+        <p>
+          Tujuan saya membuat web register ini untuk pertama kali membuat website secara inisiatif diri sendiri dan sebagai pengalaman pertama dalam membuat website tanpa bantuan dari platform mana pun kecuali chat gpt(AI) dan itu pun hanya sebagai referensi. Tidak hanya itu, dengan membuat website ini saya juga ingin memperdalam pemrograman dalam pembuatan design web.
+        </p>
+      </div>
+      
+      <div class="lines-2"></div>
+      
+      <div class="about-me-3">
+        <h2 class="about-title-3">Kontak Saya</h2>
+        <i data-feather="phone" class="icons"></i><p class="p">No. Tlp : <a href="tel:+62895377259738">+62-895-377-259-738</a></p>
+        <i data-feather="mail" class="icons"></i><p class="p">E-Mail : <a href="mailto: muhammadnavidalifian@gmail.com"> muhammadnavidalifian@gmail.com</a></p>
+      </div>
+    </section> 
+    
+    <!-- About Section Finish -->
+    
+  </div>
+
+<!-- Footer Start -->
+
+<footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/_nadips?igsh=MTdzbmlyYTBpMzVidg=="><i data-feather="instagram" class="socials-icons"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61571066752378"><i data-feather="facebook" class="socials-icons"></i></a>
+      <a href="https://www.youtube.com/@sehatbero"><i data-feather="youtube" class="socials-icons"></i></a>
+    </div>
+    
+    <div class="info">
+      <p>
+        Email : muhammadnavidalifian@gmail.com
+      </p>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; <i>2024 Muhammad Navid</i>. Hak & privasi dilindungi.</p>
+    </div>
+</footer>
+
+<!-- Footer Finish -->
+
+<!-- Feather Icons -->
+
+<script>
+      feather.replace();
+ </script>
+ 
+ <!-- Js -->
+ 
+ <script src="script.js"></script>
+
+</body>
+
+</html>
