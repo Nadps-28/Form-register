@@ -108,7 +108,7 @@ body {
   margin-top: 3.5rem;
   color: var(--bg);
   font-weight: 100%;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 .hero p:hover {
@@ -246,7 +246,7 @@ body {
 }
 
 .about .about-me p {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   line-height: 2.7rem;
   text-align: justify;
   margin: 2rem;
@@ -299,7 +299,7 @@ body {
 .about .about-me-3 .p {
   position: relative;
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   margin-top: -2.7rem;
 }
 
